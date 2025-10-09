@@ -64,7 +64,12 @@ img {
 }
 
 
-
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 
 .ramecek {
@@ -75,3 +80,70 @@ img {
 
 
 
+
+.big {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+body {
+    background-color: grey;
+    color: white;
+    padding-top: 100px;
+}
+
+.big { 
+    display: none;
+    text-transform: capitalize;
+}
+
+
+@media(max-width:500px) {
+    body {
+        background-color: rgb(38, 37, 37);
+    }
+
+    #smartphone {
+        display: block;
+    }
+}
+
+@media(min-width: 501px) and (max-width:768px) {
+    body {
+        background-color: rgb(123, 123, 123);
+    }
+
+    #tablet {
+        display: block;
+    }
+}
+
+@media(min-width: 769px) and (max-width:1200px) {
+    body {
+        background-color: rgb(38, 37, 37);
+    }
+
+    #normal {
+        display: block;
+    }
+}
+
+@media(min-width: 1201px) {
+    body {
+        background-color: rgb(123, 123, 123);
+    }
+
+    #widescreen {
+        display: block;
+    }
+}
+
+@media(max-height: 500px) {
+    body {
+        background-color: rgb(57, 56, 56);
+    }
+
+    #landscape {
+        display: block;
+    }
+}
