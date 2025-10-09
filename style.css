@@ -28,7 +28,7 @@ img {
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 25px;
     font-size: 24px;
     font-weight: bold;
     padding: 30px;
@@ -92,6 +92,7 @@ body {
     padding-top: 100px;
 }
 
+
 .big { 
     display: none;
     text-transform: capitalize;
@@ -146,4 +147,15 @@ body {
     #landscape {
         display: block;
     }
+}
+
+@media (max-width: 500px) {
+  #navbar ul li a {
+    font-size: 0; 
+  }
+
+  #navbar ul li a i {
+    font-size: 24px; 
+    margin: 0 8px;
+  }
 }
